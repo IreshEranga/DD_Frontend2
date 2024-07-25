@@ -1,9 +1,8 @@
 import React from 'react'
 import NavBar from '../../components/NavBar'
 import '../../components/NavBar.css'
-import foot from '../../assets/foot.jpg'
-import foot1 from '../../assets/foot.avif'
-import FormExample from './contactForm';
+import foot2 from '../../assets/foot2.jpg'
+import foot22 from '../../assets/foot22.webp'
 
 const Home = () => {
   return (
@@ -12,27 +11,28 @@ const Home = () => {
             <NavBar/>
 
             <div className="bodycontainer">
-                <img src={foot} alt="foot" style={{width: '100%', height: '500px' }} />
 
-                <div className="btext" style={{color:'white', fontFamily:'serif', fontStyle:'italic', fontWeight:'bolder',marginTop:'-300px', textAlign:'right', marginRight:'100px', fontSize:'80px'}}>
+            
+                <img src={foot2} alt="foot" style={{width: '80%', height: '500px', alignItems:'center', marginLeft:'150px' }} />
+
+                
+            </div>
+
+            {/* <div className="btext" style={{color:'white', fontFamily:'serif', fontStyle:'italic', fontWeight:'bolder',marginTop:'-10px', textAlign:'right', marginRight:'100px', fontSize:'80px' , backgroundColor:'black'}}>
                     DD Foot Ware
-                </div>
-            </div>
+                </div> */}
+            
 
-            {/* <h1 style={{color:'black', fontFamily:'serif', fontStyle:'italic', fontWeight:'bolder', marginTop:'250px', textAlign:'center', fontSize:'50px'}}>Who We Are</h1>
-            <div style={{textAlign:'center', marginTop:'30px'}}>
-                <img src={foot1} alt="quality" style={{width: '40%', height: 'auto' , marginLeft:'-800px'}} />
-            </div>
-            <p style={{color:'black', fontFamily:'serif', fontStyle:'italic', marginTop:'30px', textAlign:'right', fontSize:'20px'}}>
-                We are a footware company that provides high quality footwear to our customers. We take pride in our products and strive to provide the best for our customers. Our footwear is made with the highest quality materials and is designed to provide comfort and support for your feet. We stand behind our products and are committed to providing the best service to our customers.
-            </p> */}
+            
 
     <h1 style={{
-        color: 'black',
+        color: 'white',
+        backgroundColor:'black',
+        width:'300px',
         fontFamily: 'serif',
         fontStyle: 'italic',
         fontWeight: 'bolder',
-        marginTop: '250px',
+        marginTop: '100px',
         textAlign: 'center',
         fontSize: '50px'
       }}>
@@ -40,32 +40,37 @@ const Home = () => {
       </h1>
       <div style={{
         display: 'flex',
-        alignItems: 'center', // Center items vertically
-        justifyContent: 'center', // Center items horizontally if needed
+        alignItems: 'center', 
+        justifyContent: 'center',
         marginTop: '30px',
-        textAlign: 'left' // Adjust alignment for the content
+        textAlign: 'left' 
       }}>
         <img 
-          src={foot1} 
+          src={foot22} 
           alt="quality" 
-          style={{ width: '40%', height: 'auto', marginRight: '20px' ,marginLeft:'50px'}} // Space between image and text
+          style={{ width: '40%', height: '400px', marginRight: '20px' ,marginLeft:'50px'}} 
         />
         <p style={{
           color: 'black',
           fontFamily: 'serif',
           fontStyle: 'italic',
-          fontSize: '20px',
-          margin: 0 // Remove default margin
+          fontSize: '30px',
+          margin: 0 ,
+          backgroundColor:'yellow',
+          padding:'20px',
+          marginLeft:'20px',
+          marginRight:'20px', 
+          borderRadius:'20px'
         }}>
-          We are a footware company that provides high quality footwear to our customers. We take pride in our products and strive to provide the best for our customers. Our footwear is made with the highest quality materials and is designed to provide comfort and support for your feet. We stand behind our products and are committed to providing the best service to our customers.
+         We are a footwear company dedicated to delivering premium quality shoes to our customers. We take great pride in our products, ensuring they are made with top-notch materials designed for maximum comfort and support. We wholeheartedly stand behind our footwear and are committed to offering exceptional service to our valued customers.
         </p>
       </div>
-
+{/* 
       <h1 style={{textAlign:'center', fontFamily:'bold', marginTop:'150px'}}>Contact Us</h1>
         <div className="contact" style={{backgroundColor:'gray', width:'75%', marginLeft:'200px', borderRadius:'20px'}}>
             
             <FormExample/>
-        </div>
+        </div> */}
         <br /><br /><br /><br />
         
     </div>
