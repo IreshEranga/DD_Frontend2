@@ -1,35 +1,3 @@
-// import React from 'react';
-// import { useNavigate } from 'react-router-dom';
-// import { BiSolidLogOut } from 'react-icons/bi';
-// import './OutletAdminNavBar.css';
-
-// const OutletAdminNavBar = () => {
-//   const navigate = useNavigate();
-
-//   const handleLogout = () => {
-//     localStorage.removeItem('token');
-//     navigate('/login');
-//   };
-
-//   return (
-//     <nav className="navbar">
-//       <div className="nav-item" onClick={() => navigate('/outletadmin/products')}>
-//         Products
-//       </div>
-//       <div className="nav-item" onClick={() => navigate('/outletadmin/outlets')}>
-//         Outlets
-//       </div>
-//       <div className="nav-item" onClick={() => navigate('/outletadmin/orders')}>
-//         Orders
-//       </div>
-//       <div className="nav-item logout" onClick={handleLogout}>
-//         <BiSolidLogOut /> Logout
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default OutletAdminNavBar;
 
 import React from 'react';
 import Container from 'react-bootstrap/Container';
@@ -54,7 +22,7 @@ function NavBar() {
 
   return (
     <>
-      <Navbar bg="dark" data-bs-theme="dark">
+      <Navbar bg="primary" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="/outletAdmin">DD Foot Ware</Navbar.Brand>
           
@@ -67,4 +35,6 @@ function NavBar() {
 }
 
 export default NavBar;
+
+
 

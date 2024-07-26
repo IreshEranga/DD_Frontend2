@@ -58,9 +58,11 @@ const OrderList = () => {
     );
 
     return (
-        <Container style={{marginLeft:'250px'}}>
-            <h1>Orders</h1>
-            <SystemAdminSideBar/>
+
+        <div><SystemAdminSideBar/>
+        <Container style={{}}>
+            
+            
             <Form.Control
                 type="text"
                 placeholder="Search by Order ID"
@@ -131,7 +133,7 @@ const OrderList = () => {
                     </tbody>
                 </Table>
             )}
-        </Container>
+        </Container></div>
     );
 };
 

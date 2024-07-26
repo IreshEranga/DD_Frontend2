@@ -107,22 +107,22 @@ const ProductList = () => {
                 <center>
                     <Form.Control
                         type="text"
-                        placeholder="Search by product name"
+                        placeholder="Search"
                         value={search}
                         onChange={(e) => setSearch(e.target.value)}
                         className="mb-4"
-                        style={{ width: '35%', borderRadius: '30px', borderColor: 'black', padding: '10px' }}
+                        style={{ width: '35%', borderRadius: '2px', borderColor: 'black', padding: '10px',marginLeft:'800px' }}
                     />
                 </center>
                 <Row>
                     {filteredProducts.map(product => (
-                        <Col md={3} sm={6} key={product.productID} className="mb-4">
+                        <Col md={2} sm={4} key={product.productID} className="mb-4">
                             <Card>
                                 <Card.Img 
                                     variant="top" 
                                     src={images[`${product.name}.png`] || 'https://via.placeholder.com/100x100'} 
                                     alt={product.name} 
-                                    style={{width:'305px', height:'305px'}}
+                                    style={{width:'150px', height:'150px', marginLeft:'30px'}}
                                 />
                                 <Card.Body>
                                     <Card.Title>{product.name}</Card.Title>
