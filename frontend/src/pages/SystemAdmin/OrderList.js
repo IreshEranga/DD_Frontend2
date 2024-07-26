@@ -62,14 +62,13 @@ const OrderList = () => {
         <div><SystemAdminSideBar/>
         <Container style={{}}>
             
-            
             <Form.Control
                 type="text"
-                placeholder="Search by Order ID"
+                placeholder="Search"
                 value={search}
                 onChange={(e) => setSearch(e.target.value)}
                 className="mb-4"
-                style={{ width: '25%', borderRadius: '30px', borderColor: 'black', padding: '10px', marginLeft:'500px' }}
+                style={{ width: '25%', borderRadius: '2px', borderColor: 'black', padding: '10px',  marginLeft:'900px' }}
             />
 
             {loading ? (
@@ -80,7 +79,6 @@ const OrderList = () => {
                         <tr>
                         <th>Order ID</th>
                             <th>Product ID</th>
-                            
                             <th>Product Name</th>
                             <th>Email</th>
                             <th>Mobile</th>
@@ -105,7 +103,7 @@ const OrderList = () => {
                                     {order.status === 'Pending' && (
                                         <>
                                             <Button
-                                                variant="success"
+                                                variant="info"
                                                 onClick={() => handleApprove(order.orderID)}
                                                 className="me-2"
                                             >
@@ -121,7 +119,7 @@ const OrderList = () => {
                                     )}
                                     {(order.status === 'Approved' || order.status === 'Rejected') && (
                                         <Button
-                                            variant={order.status === 'Approved' ? 'success' : 'danger'}
+                                            variant={order.status === 'Approved' ? 'info' : 'danger'}
                                             disabled
                                         >
                                             {order.status}

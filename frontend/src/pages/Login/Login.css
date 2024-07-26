@@ -72,16 +72,16 @@
   justify-content: center;
   align-items: center;
   height: 95vh;
-  background: linear-gradient(45deg, #007bff, #ffffff);
+  background: linear-gradient(45deg, #232f3b, #000000);
 
   margin-top: -25px;
-  border: 1px solid #ccc;
+  border: 1px solid #000000;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .login-card {
-  background: rgba(8, 8, 8, 0.8);
+  background: rgba(255, 255, 255, 0.8);
   
   padding: 30px;
   border-radius: 8px;
@@ -97,7 +97,7 @@
 .form-group label {
   display: block;
   margin-bottom: 5px;
-  color: #fafafa;
+  color: #000000;
 }
 
 .form-group input {
