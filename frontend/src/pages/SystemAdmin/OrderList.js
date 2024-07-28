@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-import { Table, Button, Form, Container } from 'react-bootstrap';
+import { Table, Form, Container } from 'react-bootstrap';
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import SystemAdminSideBar from './SystemAdminSideBar';
@@ -29,29 +29,29 @@ const OrderList = () => {
             });
     };
 
-    const handleApprove = (orderId) => {
-        axios.put(`http://localhost:5000/api/orders/${orderId}/approve`)
-            .then(response => {
-                fetchOrders(); // Refresh the orders list
-                toast.success('Order approved successfully!');
-            })
-            .catch(error => {
-                console.error('There was an error approving the order!', error);
-                toast.error('Failed to approve order.');
-            });
-    };
+    // const handleApprove = (orderId) => {
+    //     axios.put(`http://localhost:5000/api/orders/${orderId}/approve`)
+    //         .then(response => {
+    //             fetchOrders(); // Refresh the orders list
+    //             toast.success('Order approved successfully!');
+    //         })
+    //         .catch(error => {
+    //             console.error('There was an error approving the order!', error);
+    //             toast.error('Failed to approve order.');
+    //         });
+    // };
 
-    const handleReject = (orderId) => {
-        axios.put(`http://localhost:5000/api/orders/${orderId}/reject`)
-            .then(response => {
-                fetchOrders(); // Refresh the orders list
-                toast.success('Order rejected successfully!');
-            })
-            .catch(error => {
-                console.error('There was an error rejecting the order!', error);
-                toast.error('Failed to reject order.');
-            });
-    };
+    // const handleReject = (orderId) => {
+    //     axios.put(`http://localhost:5000/api/orders/${orderId}/reject`)
+    //         .then(response => {
+    //             fetchOrders(); // Refresh the orders list
+    //             toast.success('Order rejected successfully!');
+    //         })
+    //         .catch(error => {
+    //             console.error('There was an error rejecting the order!', error);
+    //             toast.error('Failed to reject order.');
+    //         });
+    // };
 
     const filteredOrders = orders.filter(order =>
         order.orderID.toString().includes(search)
@@ -84,8 +84,8 @@ const OrderList = () => {
                             <th>Mobile</th>
                             <th>Address</th>
                             <th>Price</th>
-                            <th>Status</th>
-                            <th>Actions</th>
+                            {/* <th>Status</th>
+                            <th>Actions</th> */}
                         </tr>
                     </thead>
                     <tbody>
@@ -98,7 +98,7 @@ const OrderList = () => {
                                 <td>{order.mobile}</td>
                                 <td>{order.address}</td>
                                 <td>${order.price}</td>
-                                <td>{order.status}</td>
+                                {/* <td>{order.status}</td>
                                 <td>
                                     {order.status === 'Pending' && (
                                         <>
@@ -125,8 +125,8 @@ const OrderList = () => {
                                             {order.status}
                                         </Button>
                                     )}
-                                </td>
-                            </tr>
+                                </td>*/}
+                            </tr> 
                         ))}
                     </tbody>
                 </Table>

@@ -3,6 +3,9 @@ import NavBar from '../../components/NavBar'
 import '../../components/NavBar.css'
 import foot2 from '../../assets/foot2.jpg'
 import foot22 from '../../assets/foot22.webp'
+import foot3 from '../../assets/foot3.jpeg'
+import foot4 from '../../assets/foot4.jpeg'
+
 
 const Home = () => {
   return (
@@ -13,7 +16,9 @@ const Home = () => {
             <div className="bodycontainer">
 
             
-                <img src={foot2} alt="foot" style={{width: '80%', height: '500px', alignItems:'center', marginLeft:'150px' }} />
+                <img src={foot2} alt="foot" style={{width: '20%', height: '300px', alignItems:'center', marginLeft:'150px' }} />
+                <img src={foot3} alt="foot" style={{width: '20%', height: '300px', alignItems:'center', marginLeft:'150px' }} />
+                <img src={foot4} alt="foot" style={{width: '20%', height: '300px', alignItems:'center', marginLeft:'150px' }} />
 
                 
             </div>

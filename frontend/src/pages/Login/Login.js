@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import '../Login/Login.css';
 import NavBar from '../../components/NavBar';
+import loginim from '../../assets/login.png'
 
 const Login = () => {
   const [email, setEmail] = useState('');
@@ -45,7 +46,8 @@ const Login = () => {
     <>
       <NavBar />
       <div className="login-container">
-        <div className="login-card">
+        <img src={loginim} alt="log" style={{width:'400px', height:'400px'}}/>
+        <div className="login-card" style={{marginLeft:'100px'}}>
           <center><h1 style={{color:'black'}}>Login</h1></center>
           <form onSubmit={handleSubmit}>
             <div className="form-group">

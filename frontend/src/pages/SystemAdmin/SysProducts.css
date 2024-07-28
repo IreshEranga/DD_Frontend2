@@ -1,0 +1,20 @@
+.custom-table {
+  background-color: #f0f8ff; /* Light background color */
+}
+
+.custom-table thead {
+  background-color: #0044cc; /* Darker header background */
+  color: white; /* White text for headers */
+}
+
+tbody .custom-table tbody tr:nth-child(even) {
+  background-color: #e6f2ff; /* Slightly darker color for even rows */
+}
+
+tbody .custom-table tbody tr:nth-child(odd) {
+  background-color: #ffffff; /* White color for odd rows */
+}
+
+tbody .custom-table tbody tr:hover {
+  background-color: #cce6ff; /* Highlight color for rows on hover */
+}

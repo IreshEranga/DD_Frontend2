@@ -124,7 +124,7 @@ const ProductList = () => {
                                     alt={product.name} 
                                     style={{width:'150px', height:'150px', marginLeft:'30px'}}
                                 />
-                                <Card.Body>
+                                <Card.Body style={{backgroundColor:'lightgray'}}>
                                     <Card.Title>{product.name}</Card.Title>
                                     <Card.Text>
                                         Stock Count: {product.stockLevel}<br />

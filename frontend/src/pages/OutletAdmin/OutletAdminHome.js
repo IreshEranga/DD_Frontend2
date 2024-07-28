@@ -49,7 +49,7 @@ const OutletAdminHome = () => {
         
         {user && (
           <div>
-            <h3>Welcome, {user.name}</h3>
+           <center> <h3>Welcome, {user.name}</h3></center>
             <p>Outlet: {user.outlet}</p>
             <p>Outlet ID: {user.outletID}</p>
           </div>
@@ -57,19 +57,19 @@ const OutletAdminHome = () => {
         <table className="table table-striped">
           <thead>
             <tr>
-              <th>ID</th>
+              <th  style={{ width: '50px', backgroundColor:'grey', color:'white' }}>ID</th>
              
-              <th>Product ID</th>
-              <th>Stock Level</th>
+              <th  style={{ width: '50px', backgroundColor:'grey', color:'white' }}>Product ID</th>
+              <th  style={{ width: '50px', backgroundColor:'grey', color:'white' }}>Stock Level</th>
             </tr>
           </thead>
           <tbody>
-            {outletStocks.map(stock => (
+            {outletStocks.map((stock,index) => (
               <tr key={stock.outletStockID}>
-                <td>{stock.outletStockID}</td>
+                <td style={{ backgroundColor: index % 2 === 0 ? '#e6f2ff' : '#ffffff' }}>{stock.outletStockID}</td>
                 {/* <td>{stock.outletID}</td> */}
-                <td>{stock.productID}</td>
-                <td>{stock.stockLevel}</td>
+                <td style={{ backgroundColor: index % 2 === 0 ? '#e6f2ff' : '#ffffff' }}>{stock.productID}</td>
+                <td style={{ backgroundColor: index % 2 === 0 ? '#e6f2ff' : '#ffffff' }}>{stock.stockLevel}</td>
               </tr>
             ))}
           </tbody>
